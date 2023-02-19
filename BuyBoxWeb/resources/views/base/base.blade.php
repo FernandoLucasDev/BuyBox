@@ -60,16 +60,16 @@
         let menu = document.getElementById("menuMobileOptions");
         let mobButton = document.getElementById('mob-menu');
         menu.innerHTML = `<div class="menu-options-div">
-                <div style="padding-top: 13px; border-bottom: 1px solid white; padding-bottom: 5px">
+                <div style="padding-top: 13px; border-bottom: 1px solid white; padding-bottom: 5px; padding-right: 10px;">
                     <a href="/" class="header-links-text-mob"><i class="fa-solid fa-house" style="margin-right: 5px"></i> Home</a>
                 </div>
-                <div style="padding-top: 13px; border-bottom: 1px solid white; padding-bottom: 5px">
+                <div style="padding-top: 13px; border-bottom: 1px solid white; padding-bottom: 5px; padding-right: 10px;">
                     <a href="/" class="header-links-text-mob"><i class="fa-solid fa-boxes-stacked" style="margin-right: 5px"></i> Produtos</a>
                 </div>
-                <div style="padding-top: 13px; border-bottom: 1px solid white; padding-bottom: 5px">
+                <div style="padding-top: 13px; border-bottom: 1px solid white; padding-bottom: 5px; padding-right: 10px;">
                     <a href="/" class="header-links-text-mob"><i class="fa-solid fa-right-to-bracket" style="margin-right: 5px"></i> Cadastro</a>
                 </div>
-                <div style="padding-top: 13px; border-bottom: 1px solid white; padding-bottom: 5px">
+                <div style="padding-top: 13px; border-bottom: 1px solid white; padding-bottom: 5px; padding-right: 10px;">
                     <a href="/" class="header-links-text-mob"><i class="fa-solid fa-circle-info" style="margin-right: 5px"></i> Sobre</a>
                 </div>
             </div>`;
