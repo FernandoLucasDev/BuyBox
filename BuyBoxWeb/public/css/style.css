@@ -133,6 +133,57 @@
     width: 100%;
 }
 
+.back-products-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    width: 18rem;
+    height: 20rem;
+    margin: 1.2rem;
+    border-radius: 1rem;
+    background-color: red;
+    background-position: center;
+    background-size: cover;
+}
+
+.info-content-card {
+    width: 98%;
+    margin: auto;
+    height: 42%;
+    background-color: white;
+    margin-top: 63%;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+.name-product-card {
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.price-card {
+    text-align: end;
+    margin-top: 5px;
+    margin-right: 15px;
+    font-size: 17px;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.description-card {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 @media screen and (max-width: 700px){
     .form-filter-products {
         padding: 1.6rem;

@@ -1,14 +1,18 @@
 @extends('base.base')
+@section('title', 'HOME | BB')
 @section('content')
     <section>
-        <div class="img-product-emphasis" style="background-image: url('https://tracklist.com.br/wp-content/uploads/2022/01/aurora-scaled-e1642877338386.jpg');">
+        <div class="img-product-emphasis" style="background-image: url({{ $emp[0] }});">
         </div>
-        <div class="product-emphasis-buy" style="background-image: url('https://tracklist.com.br/wp-content/uploads/2022/01/aurora-scaled-e1642877338386.jpg');">
+        <div class="product-emphasis-buy" style="background-image: url({{ $emp[0] }});">
             <div class="info-product-emphasis">
-                <p class="info-product-emphasis-text"><strong>Aurora TGWCT</strong></p>
+                <p class="info-product-emphasis-text"><strong>{{ $emp[1] }}</strong></p>
             </div>
         </div>
         <p class="text-home-see-more"><strong>Confira mais produtos abaixo:</strong></p>
+    </section>
+
+    <section>
         <div class="form-filter-products">
             <form action="/" class="form-filter">
             <div class="selects">
@@ -50,5 +54,20 @@
                     </form>
                     </div>
             </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="back-products-list">
+            @foreach ($products as $item)   
+                <div class="product-card" style="background-image: url({{ $images[$item->id_announcement]->image }})">
+                    <div class="info-content-card">
+                        <p class="name-product-card"><Strong>{{ $item->name }}</Strong></p>
+                        <p class="price-card"><strong>{{ $item->price }}</strong></p>
+                        <p class="description-card">{{ substr($item->description , 0, 120) }} ...</p>
+                    </div>
+                </div>
+            @endforeach
+        </div>
     </section>
 @endsection
